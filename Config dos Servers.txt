@@ -1,0 +1,60 @@
+python3 --version
+sudo apt install python3
+sudo apt install python3-pip
+
+pip install mysql-connector-python
+
+-----------------------------------------------------------------------------
+
+sudo apt update
+sudo apt install mysql-server
+sudo mysql_secure_installation
+
+configurando as senhas do mysql
+root etc
+
+https://www.youtube.com/watch?v=Gw8_QOicyIQ
+ver o video, copiar o comando de erro do stackoverflow
+e arrumar o erro da senha
+
+sudo mysql_secure_installation
+-----------------------------------------------------------------------------
+
+sudo mysql -u root -p
+102030hh
+-----------------------------------------------------------------------------
+
+CRIAR BASE DE DADOS
+
+CREATE DATABASE VOLKS;
+
+CREATE DATABASE FIAT;
+
+USE database;
+-----------------------------------------------------------------------------
+
+CREATE TABLE = veiculos(
+id = int(2) AUTO_INCREMENT,
+modelo = varchar(50),
+preco = float,
+PRIMARY KEY (id)
+);
+
+INSERT INTO veiculos(id, modelo, preco) VALUES (null, "Gol", 55.000);
+INSERT INTO veiculos(id, modelo, preco) VALUES (null, "Saveiro", 75.000);
+INSERT INTO veiculos(id, modelo, preco) VALUES (null, "Up", 45.000);
+INSERT INTO veiculos(id, modelo, preco) VALUES (null, "Polo", 60.000);
+INSERT INTO veiculos(id, modelo, preco) VALUES (null, "Golf", 70.000);
+
+INSERT INTO veiculos(id, modelo, preco) VALUES (null, “Palio”, 52.500);
+INSERT INTO veiculos(id, modelo, preco) VALUES (null, “Strada”, 72.500);
+INSERT INTO veiculos(id, modelo, preco) VALUES (null, “Uno”, 42000);
+INSERT INTO veiculos(id, modelo, preco) VALUES (null, “Argo”, 65000);
+INSERT INTO veiculos(id, modelo, preco) VALUES (null, “Pulse”, 85.800);
+-----------------------------------------------------------------------------
+
+LIBERANDO FIREWALL DAS MAQUINAS
+
+sudo iptables -F
+sudo iptables -X
+-----------------------------------------------------------------------------
